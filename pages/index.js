@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <h6 className={styles.title}>
+          Go to <Link href="/about"> About Page</Link>
+        </h6>
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
